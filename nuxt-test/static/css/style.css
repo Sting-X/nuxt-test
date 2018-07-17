@@ -1,0 +1,275 @@
+﻿@charset "utf-8";
+/****************
+ * @description : 公共CSS
+ * @author   : haiyang  <haiyang6@staff.sina.com.cn>
+ * @date     : 2016-10-17 更新
+ ****************/
+
+  /*css reset*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+html { font-family:Microsoft YaHei ,Helvetica Neue, Helvetica , STHeiTi, Arial, sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 62.5%; line-height:1.5}
+body {font-size: 16px;overflow-x: hidden;min-width:320px; /*-webkit-overflow-scrolling: touch;*/color:#1a1a1a;background:#e8e8e8 }
+a { text-decoration: none; color: #1a1a1a; }
+a:active { color: #3990e6;outline: 0; }
+
+audio, canvas, progress, video { display: inline-block; vertical-align: baseline; }
+audio:not([controls]) { display: none; height: 0; }svg:not(:root) { overflow: hidden; }
+
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }pre { overflow: auto; white-space: pre; white-space: pre-wrap; word-wrap: break-word; }code, kbd, pre, samp { font-family: monospace; font-size: 1rem}mark { background: #ff0; color: #1a1a1a; }dfn { font-style: italic; }
+table { border-collapse: collapse; border-spacing: 0; }td, th { padding: 0; }
+ul, ol { list-style: none outside none; }
+h1,h2,h3,h4,h5,h6,strong {font-size:100%; font-weight:normal}
+
+img{vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+button, input, optgroup, select, textarea { color: inherit; font: inherit; margin: 0; }
+button { overflow: visible; }
+button, select { text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
+button[disabled], html input[disabled] { cursor: default; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+input { line-height: normal; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+textarea { overflow: auto; resize: vertical; }
+input::-moz-placeholder, textarea::-moz-placeholder { color: #ccc; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #ccc; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #ccc; }
+
+/*commos*/
+.border_box{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.fl{float:left;}.fr{float:right;}.hide{display:none!important;}.show{display: block!important;}
+.ellipsis { white-space:nowrap; text-overflow:ellipsis; overflow:hidden}
+.break { word-break:break-all; word-wrap:break-word}
+.clearfix:after{content:'\0020';display:block;height:0;clear:both}.clearfix{*zoom:1}
+
+
+/*noScript*/
+.noScript{margin:10px;text-align:center;background:#adb9c4;color:#fff;display:block; height:40px;line-height:40px}
+@font-face {
+	font-family: 'SinaHomeFont';
+	src:
+	url('fontsAll/SinaHomeFont.ttf?h0l1t1') format('truetype'),
+	url('fontsAll/SinaHomeFont.woff?h0l1t1') format('woff'),
+	url('fontsAll/SinaHomeFont.svg?h0l1t1#SinaHomeFont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon_"], [class*=" icon_"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'SinaHomeFont' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon_check:before {
+	content: "\e900";
+}
+.icon_delete:before {
+	content: "\e901";
+}
+.icon_page_audio:before {
+	content: "\e902";
+}
+.icon_page_audio_loading:before {
+	content: "\e903";
+}
+.icon_page_audio_pause:before {
+	content: "\e904";
+}
+.icon_page_audio_play:before {
+	content: "\e905";
+}
+.icon_page_check:before {
+	content: "\e906";
+}
+.icon_page_checked:before {
+	content: "\e907";
+}
+.icon_page_collection_1:before {
+	content: "\e908";
+}
+.icon_page_collection_2:before {
+	content: "\e909";
+}
+.icon_page_comment_1:before {
+	content: "\e90a";
+}
+.icon_page_comment_2:before {
+	content: "\e90b";
+}
+.icon_page_comment_3:before {
+	content: "\e90c";
+}
+.icon_page_comment_4:before {
+	content: "\e90d";
+}
+.icon_page_edit:before {
+	content: "\e90e";
+}
+.icon_page_loading:before {
+	content: "\e90f";
+}
+.icon_page_praise:before {
+	content: "\e910";
+}
+.icon_page_share:before {
+	content: "\e911";
+}
+.icon_page_share_1:before {
+	content: "\e912";
+}
+.icon_page_spread:before {
+	content: "\e913";
+}
+.icon_page_unchecked:before {
+	content: "\e914";
+}
+.icon_page_v:before {
+	content: "\e915";
+}
+.icon_page_video:before {
+	content: "\e916";
+}
+.icon_play:before {
+	content: "\e917";
+}
+.icon_quotes:before {
+	content: "\e918";
+}
+.icon_back:before {
+	content: "\e919";
+}
+.icon_change:before {
+	content: "\e91a";
+}
+.icon_collect:before {
+	content: "\e91b";
+}
+.icon_collected:before {
+	content: "\e91c";
+}
+.icon_com_b:before {
+	content: "\e91d";
+}
+.icon_download:before {
+	content: "\e91e";
+}
+.icon_enter:before {
+	content: "\e91f";
+}
+.icon_home:before {
+	content: "\e920";
+}
+.icon_praise:before {
+	content: "\e921";
+}
+.icon_return:before {
+	content: "\e922";
+}
+.icon_share:before {
+	content: "\e923";
+}
+.icon_share2:before {
+	content: "\e924";
+}
+.icon_telephone:before {
+	content: "\e925";
+}
+.icon_b_delete:before {
+	content: "\e926";
+}
+.icon_b_refresh:before {
+	content: "\e927";
+}
+.icon_b_video:before {
+	content: "\e928";
+}
+.icon_com:before {
+	content: "\e929";
+}
+.icon_lg:before {
+	content: "\e92a";
+}
+.icon_live:before {
+	content: "\e92b";
+}
+.icon_location:before {
+	content: "\e92c";
+}
+.icon_pictures:before {
+	content: "\e92d";
+}
+.icon_play2:before {
+	content: "\e92e";
+}
+.icon_push:before {
+	content: "\e92f";
+}
+.icon_refresh_fl:before {
+	content: "\e930";
+}
+.icon_s_del:before {
+	content: "\e931";
+}
+.icon_s_refresh:before {
+	content: "\e932";
+}
+.icon_s_video:before {
+	content: "\e933";
+}
+.icon_set:before {
+	content: "\e934";
+}
+.icon_time:before {
+	content: "\e935";
+}
+.icon_top:before {
+	content: "\e936";
+}
+.icon_uninterested:before {
+	content: "\e937";
+}
+.icon_user:before {
+	content: "\e938";
+}
+.icon_view:before {
+	content: "\e939";
+}
+
+
+
+
+
+
+
+
+.page_main{ max-width:768px; margin:0 auto;}
+.card_module{clear:both;overflow:hidden;margin-bottom:0.16rem;background:#fff; border-bottom:1px solid #e4e4e4;}
+
+
+
+/*2017.2.28新增*/
+html{
+	-webkit-font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+
+
+
+
+
+
+
