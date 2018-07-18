@@ -66,7 +66,6 @@ export default {
   async asyncData () {
     let { data } = {data:{
       title:'index',
-
     }};
 
     return {

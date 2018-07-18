@@ -13,8 +13,9 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@mfelibs/base-css": "^3.0.14",
-    "@mfelibs/common_feed": "^1.7.33",
+    "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/proxy": "^1.2.4",
+    "axios": "^0.18.0",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {
